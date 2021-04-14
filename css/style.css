@@ -1,0 +1,646 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Nav */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+  }
+  
+  .main-nav .logo {
+    width: 110px;
+  }
+  
+  .main-nav ul {
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    padding: 0 10px;
+  }
+  
+  .main-nav ul li a {
+    padding-bottom: 2px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+  }
+
+  .main-nav ul li a {
+    font-size: 18px;
+  }
+  
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+  }
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;;
+  }
+
+  .btn_event {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #4b09e4;
+    color: #fff;
+    font-size: 15px;;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .dark {
+    color: #fff;
+  }
+  
+  .dark .btn {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Showcase */
+  .showcase {
+    width: 100%;
+    height: 400px;
+    background: url('/images/showcase.png') no-repeat center center fixed  ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+  }
+
+  .faculty_directory{
+   text-align: center;
+   margin-bottom: 30px;
+  }
+  
+
+  .showcase h2, .showcase p {
+    color: #fff; 
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  #showcase_chat{
+    margin-top:100px;
+  }
+
+  
+  #showcase_chat p, #showcase_chat a  {
+    font-size: 16px;
+    display: inline;
+  }
+
+  
+  
+  /* Home cards */
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .home-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .home-cards h3 {
+    margin-bottom: 5px;
+  }
+  
+  .home-cards a {
+    display: inline-block;
+    padding-top: 10px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .home-cards a:hover i {
+    margin-left: 10px;
+  }
+  
+  /* Xbox */
+  .event {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 350px;
+    background: url('/images/byu_dance_event.jpeg') no-repeat center center/cover;
+    margin-bottom: 20px;
+  }
+
+  .event_right {
+    margin-left: 30px ;
+    margin-top: 80px;
+    display: inline-block;
+    width: 40%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .event_left {
+    margin-left: 30px ;
+    margin-top: 160px;
+    display: inline-block;
+    width: 40%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+
+  
+
+  
+
+  .facultyImage{
+    height: 170px;
+    width: 200px;
+    display: inline-block;
+    float: left;
+  }
+
+  .facultyRight {
+    display: inline-block;
+    width: 60%;
+    height: 170px;
+    margin-left: 20px;
+    
+  }
+
+  .facultyRight h2 p {
+    margin-bottom: 5px;
+  }
+
+  .faculty_box{
+    /* border: 1px solid #000; */
+    display: inline-block;
+    margin-top: 20px;
+    min-width: 600px;
+    margin-bottom: 30px;
+    
+  }
+
+  .myForm{
+    display: inline-block;
+    width: 400px;
+    float:right ;
+    margin-right: 30px;
+    margin-top:30px; 
+    height: 450px;
+    overflow: scroll;
+  }
+
+  .myForm label {
+    color: #fff;
+  }
+
+  .myForm small{
+    color: #fff;
+
+  }
+
+
+  
+
+
+
+
+  .xbox_right a{
+    margin-top: 20px;
+  }
+  
+  
+  
+  .xbox p, .carbon p {
+    margin: 10px 0 20px;
+  }
+  
+  /* Carbon */
+  .carbon {
+    width: 100%;
+    height: 350px;
+    background: url('https://i.ibb.co/72cgtsz/carbon.jpg') no-repeat center center/cover;
+  }
+
+  .carbon_form {
+    width: 100%;
+    height: 500px;
+    background: url('/images/form-background.png') no-repeat center center/cover;
+   
+  }
+  
+  .carbon .content {
+    width: 55%;
+    padding: 100px 0 0 30px;
+  }
+  
+  /* Follow */
+  .follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+  }
+  
+  .follow * {
+    margin-right: 10px;
+  }
+  
+  /* Links */
+  .links {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+  }
+  
+  .links-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .links li {
+    line-height: 2.8;
+  }
+
+  .link_right{
+    margin-left: 40px;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+  }
+  
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer div i {
+    margin-right: 10px;
+  }
+  
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  
+  @media(max-width: 700px) {
+    .menu-btn {
+      display: block;
+    }
+  
+    .menu-btn:hover {
+      opacity: 0.5;
+    }
+  
+    .main-nav ul.right-menu {
+      margin-right: 50px;
+    }
+  
+    .main-nav ul.main-menu {
+      display: block;
+      position: absolute;
+      top:0;
+      left: 0;
+      background: #f2f2f2;
+      width: 50%;
+      height: 100%;
+      border-right: #ccc 1px solid;
+      opacity: 0.9;
+      padding: 30px;
+      transform: translateX(-500px);
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .main-nav ul.main-menu li {
+      padding: 10px;
+      border-bottom: #ccc solid 1px;
+      font-size: 14px;
+    }
+  
+    .main-nav ul.main-menu li:last-child {
+      border-bottom: 0;
+    }
+  
+    .main-nav ul.main-menu.show {
+      transform: translateX(-20px);
+    }
+  
+    .home-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .xbox .content p {
+      display: none;
+    }
+  
+    .xbox .content h2 {
+      margin-bottom: 20px;
+    }
+  
+    .carbon .content {
+      width: 85%;
+    }
+  
+    .links .links-inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media(max-width: 500px) {
+    .home-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .links .links-inner {
+      grid-template-columns: 1fr;
+    }
+  
+    .links .links-inner ul {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: var(--dark-color-a);
+	border: 0;
+	font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+	max-width: 1100px;
+	background: #fff;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.chat-header {
+	background: var(--dark-color-a);
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background: var(--dark-color-b);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* Join Page */
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.huangyi{
+	text-align: center;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
