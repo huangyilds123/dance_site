@@ -237,14 +237,13 @@
     /* border: 1px solid #000; */
     display: inline-block;
     margin-top: 20px;
-    min-width: 600px;
     margin-bottom: 30px;
     
   }
 
   .myForm{
     display: inline-block;
-    width: 400px;
+    width: 300px;
     float:right ;
     margin-right: 30px;
     margin-top:30px; 
@@ -435,20 +434,7 @@
     }
   }
   
-  @media(max-width: 500px) {
-    .home-cards {
-      grid-template-columns: 1fr;
-    }
   
-    .links .links-inner {
-      grid-template-columns: 1fr;
-    }
-  
-    .links .links-inner ul {
-      margin-bottom: 20px;
-    }
-  }
-
 
 
 
@@ -635,6 +621,78 @@ a {
 	text-align: center;
 }
 
+
+
+
+
+
+
+@media(max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
+  }
+
+  .event {
+    display:block;
+    float: left;
+    width: 100%;
+    height: 350px;
+    background: url('/images/byu_dance_event.jpeg') no-repeat center center/cover;
+    margin-bottom: 20px;
+  }
+
+  .event_right {
+    margin-left: 10px ;
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+   
+  }
+
+
+  .facultyImage{
+    height: 170px;
+    width: 200px;
+    display: block;
+    
+  }
+
+  .facultyRight {
+    display: block;
+    width: 200px;
+    height: 170px;
+    margin-left: 20px;
+    
+  }
+
+  .facultyRight h2 p {
+    margin-bottom: 5px;
+  }
+
+  .faculty_box{
+    /* border: 1px solid #000; */
+    display: inline-block;
+    margin-top: 20px;
+    min-width: 600px;
+    margin-bottom: 30px;
+    
+  }
+
+}
+
+
+
+
 @media (max-width: 700px) {
 	.chat-main {
 		display: block;
@@ -642,5 +700,36 @@ a {
 
 	.chat-sidebar {
 		display: none;
-	}
+  }
+  
+  
 }
+
+@media (max-width: 736px) {
+
+
+  .carbon_form {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background: url('/images/form-background.png') no-repeat center center/cover;
+    border:0.1px solid #f2f2f2;
+    overflow: scroll;
+    min-width: 447px;
+  }
+
+	.event_left {
+    float: left;
+    display: inline;
+    width: 90%;
+    height: 100px;
+  }
+
+  .myForm{
+    text-align: center;
+  }
+  
+}
+
+
+
